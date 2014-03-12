@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{44F76BE6-863D-4597-9B42-C107C42E355C}"
+         Type="Text"
+         Group="MARTA Columns"
+         DisplayName="Hotline Call Number"
+         Name="HLCallNumber"/>
+</Elements>

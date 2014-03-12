@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{C6F4A052-3C44-4772-B5D1-458084DA6B16}"
+         Type="Text"
+         Name="CallTopic"
+         DisplayName="Call Topic"
+         Group="MARTA Columns"/>
+</Elements>

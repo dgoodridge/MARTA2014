@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{C97B87CD-367C-465E-9068-0EA7050C6A73}"
+         Type="DateTime"
+         Group="MARTA Columns"
+         DisplayName="End Date"
+         Name="EndDate"
+         Format="DateOnly"/>         
+</Elements>

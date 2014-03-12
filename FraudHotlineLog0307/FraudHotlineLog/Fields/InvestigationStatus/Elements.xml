@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{53DC354B-A1E7-4387-BF44-55ADED533013}"
+         Type="Choice"
+         Group="MARTA Columns"
+         DisplayName="Status"
+         Name="InvestigationStatus">
+    <CHOICES>
+      <CHOICE>In Progress</CHOICE>
+      <CHOICE>Writing Report</CHOICE>
+      <CHOICE>Reassigned</CHOICE>
+      <CHOICE>On Hold</CHOICE>
+      <CHOICE>Suspended</CHOICE>
+      <CHOICE>Closed</CHOICE>
+    </CHOICES>
+  </Field>
+</Elements>

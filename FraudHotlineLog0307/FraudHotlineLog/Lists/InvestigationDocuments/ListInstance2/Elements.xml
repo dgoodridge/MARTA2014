@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Investigations"
+                OnQuickLaunch="TRUE"
+                TemplateType="11003"
+                Url="Lists/Investigations"
+                Description="Record Fraud, Waste and Abuse Investigations">
+  </ListInstance>
+</Elements>

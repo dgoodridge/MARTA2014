@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{7A8DEF46-ADF2-46B0-9B20-C7B938A20C7C}"
+         Type="Choice"
+         Group="MARTA Columns"
+         DisplayName="Type"
+         Name="Investigation Type">
+    <CHOICES>
+      <CHOICE>Fraud</CHOICE>
+      <CHOICE>Waste</CHOICE>
+      <CHOICE>Abuse</CHOICE>
+    </CHOICES>
+  </Field>
+</Elements>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{D625FD31-AF7B-41E8-979E-006F2737445A}"
+         Type="Number"
+         Group="MARTA Columns"
+         DisplayName="Hours Spent"
+         Name="HoursSpent"/>
+</Elements>

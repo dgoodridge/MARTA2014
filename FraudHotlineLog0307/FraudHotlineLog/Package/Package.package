@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="0a277077-5b7b-43f9-8bcb-a1c5ccceba51" solutionId="0a277077-5b7b-43f9-8bcb-a1c5ccceba51" resetWebServer="false" name="FraudHotlineLog" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="2db54b47-a884-4170-afdb-380fcfd0ff78" />
+    <featureReference itemId="48e8e2ec-1685-4169-bc60-48230bbf284b" />
+  </features>
+</package>

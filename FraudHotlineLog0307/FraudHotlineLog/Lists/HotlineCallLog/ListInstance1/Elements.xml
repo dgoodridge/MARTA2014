@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Hotline Call Log"
+                OnQuickLaunch="TRUE"
+                TemplateType="11001"
+                Url="Lists/HotlineLog"
+                Description="Record of Fraud, Waste and Abuse Hotline calls"
+                VersioningEnabled="TRUE">
+  </ListInstance>
+</Elements>

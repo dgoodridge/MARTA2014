@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{3AA47173-64D7-441A-AF2B-F03704FDD26C}"
+         Type="Note"
+         Group="MARTA Columns"
+         DisplayName="Auditor Comments"
+         Name="AuditorComments"
+         RichText="FALSE"
+         NumLines="6"/>
+</Elements>

@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="Investigation Documents" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/FraudHotlineLog-InvestigationDocuments" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      <ContentType ID="0x0120D52000576e60aa3a8d44e8a55f830ee46b005c" Name="FraudHotlineLog - InvestigationDocuments" Group="MARTA Content Types" Description="Record Fraud, Waste and Abuse Investigations" Inherits="TRUE" Version="0">
+        <FieldRefs>
+          <FieldRef ID="{78D11EB3-2377-4F81-B1C0-8F49FFCC8CF4}" Name="InvestigationNumber" />
+          <FieldRef ID="{53DC354B-A1E7-4387-BF44-55ADED533013}" Name="InvestigationStatus" />
+          <FieldRef ID="{7A8DEF46-ADF2-46B0-9B20-C7B938A20C7C}" Name="InvestigationType" />
+          <FieldRef ID="{76034F23-8B4F-4439-92A4-6932E227D871}" Name="InvestigationDept" />
+          <FieldRef ID="{094B8264-CA75-47D2-9664-31D5AF438312}" Name="Auditor" />
+          <FieldRef ID="{64cd368d-2f95-4bfc-a1f9-8d4324ecb007}" Name="StartDate" />
+          <FieldRef ID="{8a121252-85a9-443d-8217-a1b57020fadf}" Name="_EndDate" />
+          <FieldRef ID="{D625FD31-AF7B-41E8-979E-006F2737445A}" Name="HoursSpent" />
+        </FieldRefs>
+      </ContentType>
+    </ContentTypes>
+    <Fields>
+      <Field ID="{8553196d-ec8d-4564-9861-3dbe931050c8}" Name="FileLeafRef" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="FileLeafRef" Group="_Hidden" ShowInFileDlg="FALSE" ShowInVersionHistory="FALSE" Type="File" DisplayName="$Resources:core,Name;" AuthoringInfo="$Resources:core,for_use_in_forms;" List="Docs" FieldRef="ID" ShowField="LeafName" JoinColName="DoclibRowId" JoinRowOrdinal="0" JoinType="INNER" Required="TRUE" Hidden="FALSE" Customization="" />
+      <Field ID="{b824e17e-a1b3-426e-aecf-f0184d900485}" Name="ItemChildCount" DisplaceOnUpgrade="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="ItemChildCount" Group="_Hidden" ReadOnly="TRUE" Filterable="FALSE" Sortable="FALSE" Hidden="FALSE" Type="Lookup" DisplayName="$Resources:core,Item_Child_Count;" List="Docs" FieldRef="ID" ShowField="ItemChildCount" JoinColName="DoclibRowId" JoinRowOrdinal="0" JoinType="INNER" Customization="" />
+      <Field ID="{960ff01f-2b6d-4f1b-9c3f-e19ad8927341}" Name="FolderChildCount" DisplaceOnUpgrade="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="FolderChildCount" Group="_Hidden" ReadOnly="TRUE" Filterable="FALSE" Sortable="FALSE" Hidden="FALSE" Type="Lookup" DisplayName="$Resources:core,Folder_Child_Count;" List="Docs" FieldRef="ID" ShowField="FolderChildCount" JoinColName="DoclibRowId" JoinRowOrdinal="0" JoinType="INNER" Customization="">
+      </Field>
+      <Field ID="{094b8264-ca75-47d2-9664-31d5af438312}" Type="User" Group="MARTA Columns" DisplayName="Auditor" Name="Auditor" />
+      <Field ID="{d625fd31-af7b-41e8-979e-006f2737445a}" Type="Number" Group="MARTA Columns" DisplayName="Hours Spent" Name="HoursSpent" />
+      <Field ID="{76034f23-8b4f-4439-92a4-6932e227d871}" Type="Text" Group="MARTA Columns" DisplayName="Department" Name="InvestigationDept" />
+      <Field ID="{78d11eb3-2377-4f81-b1c0-8f49ffcc8cf4}" Type="Text" Group="MARTA Columns" DisplayName="Investigation Number" Name="InvestigationNumber" />
+      <Field ID="{53dc354b-a1e7-4387-bf44-55aded533013}" Type="Choice" Group="MARTA Columns" DisplayName="Status" Name="InvestigationStatus">
+    <CHOICES>
+      <CHOICE>In Progress</CHOICE>
+      <CHOICE>Writing Report</CHOICE>
+      <CHOICE>Reassigned</CHOICE>
+      <CHOICE>On Hold</CHOICE>
+      <CHOICE>Suspended</CHOICE>
+      <CHOICE>Closed</CHOICE>
+    </CHOICES>
+  </Field>
+      <Field ID="{7a8def46-adf2-46b0-9b20-c7b938a20c7c}" Type="Choice" Group="MARTA Columns" DisplayName="Type" Name="Investigation Type">
+    <CHOICES>
+      <CHOICE>Fraud</CHOICE>
+      <CHOICE>Waste</CHOICE>
+      <CHOICE>Abuse</CHOICE>
+    </CHOICES>
+  </Field>
+      <Field ID="{8A121252-85A9-443d-8217-A1B57020FADF}" Name="_EndDate" Group="$Resources:core,Base_Columns;" Type="DateTime" DisplayName="$Resources:core,End_Date;" Format="DateTime" SourceID="http://schemas.microsoft.com/sharepoint/v3/fields" StaticName="_EndDate">
+        <Default>[today]</Default>
+      </Field>
+      <Field ID="{64cd368d-2f95-4bfc-a1f9-8d4324ecb007}" Name="StartDate" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="StartDate" Group="$Resources:core,Base_Columns;" Type="DateTime" Format="DateOnly" DisplayName="$Resources:core,Start_Date;">
+        <Default>[today]</Default>
+      </Field>
+    </Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitleNoMenu">
+          </FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE">
+            </FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="Attachments">
+          </FieldRef>
+          <FieldRef Name="LinkTitle">
+          </FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="ID">
+            </FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

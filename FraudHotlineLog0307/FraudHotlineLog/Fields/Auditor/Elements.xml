@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{094B8264-CA75-47D2-9664-31D5AF438312}"
+         Type="User"
+         Group="MARTA Columns"
+         DisplayName="Auditor"
+         Name="Auditor"/>
+</Elements>

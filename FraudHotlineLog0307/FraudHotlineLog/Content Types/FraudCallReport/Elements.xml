@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x0100fcf6f3e7250145989f9b574cc9747fa8"
+               Name="FraudCallReport"
+               Group="MARTA Content Types"
+               Description="Record of incoming Fraud, Waste and Abuse Hotline Calls"
+               Inherits="TRUE"
+               Version="0">
+    <FieldRefs>
+      <FieldRef ID="{44F76BE6-863D-4597-9B42-C107C42E355C}" Name="HLCallNumber"/>
+      <FieldRef ID="{C6F4A052-3C44-4772-B5D1-458084DA6B16}" Name="CallTopic"/>
+      <FieldRef ID="{59FD12B6-2314-47E8-8B66-AF04FF933BAF}" Name="CallStatus"/>
+      <FieldRef ID="{587C3BFA-1711-4A6D-B3CC-C36C7834C37E}" Name="DateReceived"/>
+      <FieldRef ID="{00D38CD6-E957-4450-AB62-BA471E02161B}" Name="AreaOfConcern"/>
+      <FieldRef ID="{0248290C-FE0A-4FA0-B85F-B90E7F9AEF2A}" Name="CallerName"/>
+      <FieldRef ID="{E500314A-8B2B-4750-9C93-770B8FA6EB8F}" Name="CallerPhone"/>
+      <FieldRef ID="{64cd368d-2f95-4bfc-a1f9-8d4324ecb007}" Name="StartDate"/>
+      <FieldRef ID="{8a121252-85a9-443d-8217-a1b57020fadf}" Name="_EndDate"/>
+      <FieldRef ID="{3AA47173-64D7-441A-AF2B-F03704FDD26C}" Name="AuditorComments"/>
+      <FieldRef ID="{4BF4DC95-278C-4F2C-A357-39F53DD9F6B3}" Name="InvestigationStarted"/>
+      <FieldRef ID="{E4BD36EC-17FE-4BAC-A5D2-CC4D21AC7DCD}" Name="InvestigationDocuments"/>
+    </FieldRefs>
+  </ContentType>
+</Elements>

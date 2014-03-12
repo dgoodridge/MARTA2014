@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{00D38CD6-E957-4450-AB62-BA471E02161B}"
+         Type="Text"
+         Group="MARTA Columns"
+         DisplayName="Area of Concern"
+         Name="AreaOfConcern"/>
+</Elements>

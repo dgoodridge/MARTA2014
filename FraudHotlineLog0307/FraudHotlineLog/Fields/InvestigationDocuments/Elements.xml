@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{E4BD36EC-17FE-4BAC-A5D2-CC4D21AC7DCD}"
+         Type="URL"
+         Group="MARTA Columns"
+         DisplayName="Documents"
+         Name="InvestigationDocuments"
+         Format="Hyperlink"
+         ShowInNewForm="FALSE"
+         ShowInEditForm="TRUE"
+         ShowInDisplayForm="TRUE"/>
+</Elements>

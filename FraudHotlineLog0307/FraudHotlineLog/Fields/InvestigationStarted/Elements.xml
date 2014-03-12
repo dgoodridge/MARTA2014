@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{4BF4DC95-278C-4F2C-A357-39F53DD9F6B3}"
+         Type="Boolean"
+         Group="MARTA Columns"
+         DisplayName="Investigation Started"
+         Name="InvestigationStarted"
+         Hidden="TRUE"/>
+</Elements>

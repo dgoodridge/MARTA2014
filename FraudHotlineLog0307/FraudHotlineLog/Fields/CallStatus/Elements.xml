@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{59FD12B6-2314-47E8-8B66-AF04FF933BAF}"
+         Type="Choice"
+         Group="MARTA Columns"
+         DisplayName="Call Status"
+         Name="CallStatus">
+    <CHOICES>
+      <CHOICE>Forwarded</CHOICE>
+      <CHOICE>In Progress</CHOICE>
+      <CHOICE>Closed</CHOICE>
+    </CHOICES>
+  </Field>
+</Elements>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{76034F23-8B4F-4439-92A4-6932E227D871}"
+         Type="Text"
+         Group="MARTA Columns"
+         DisplayName="Department"
+         Name="InvestigationDept"/>
+</Elements>

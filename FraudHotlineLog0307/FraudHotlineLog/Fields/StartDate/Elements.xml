@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{0EAE06A0-9F73-480F-8F1C-E25243C7E03C}"
+         Type="DateTime"
+         Group="MARTA Columns"
+         DisplayName="Start Date"
+         Name="StartDate"
+         Format="DateOnly"/>
+</Elements>

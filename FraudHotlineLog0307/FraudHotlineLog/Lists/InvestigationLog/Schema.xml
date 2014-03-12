@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="Investigations" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/FraudHotlineLog-InvestigationLog" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      <ContentType ID="0x010020fd8ccb5992481ea3e6df354473383c" Name="InvestigationInstance" Group="MARTA Content Types" Description="Record of Fraud, Waste and Abuse investigations" Inherits="FALSE" Version="0">
+        <FieldRefs>
+          <FieldRef ID="{78D11EB3-2377-4F81-B1C0-8F49FFCC8CF4}" Name="InvestigationNumber" />
+          <FieldRef ID="{53DC354B-A1E7-4387-BF44-55ADED533013}" Name="InvestigationStatus" />
+          <FieldRef ID="{7A8DEF46-ADF2-46B0-9B20-C7B938A20C7C}" Name="InvestigationType" />
+          <FieldRef ID="{76034F23-8B4F-4439-92A4-6932E227D871}" Name="InvestigationDept" />
+          <FieldRef ID="{094B8264-CA75-47D2-9664-31D5AF438312}" Name="Auditor" />
+          <FieldRef ID="{64cd368d-2f95-4bfc-a1f9-8d4324ecb007}" Name="StartDate" />
+          <FieldRef ID="{8a121252-85a9-443d-8217-a1b57020fadf}" Name="EndDate" />
+          <FieldRef ID="{D625FD31-AF7B-41E8-979E-006F2737445A}" Name="HoursSpent" />
+          <FieldRef ID="{E4BD36EC-17FE-4BAC-A5D2-CC4D21AC7DCD}" Name="InvestigationDocuments" />
+        </FieldRefs>
+      </ContentType>
+    </ContentTypes>
+    <Fields>
+      <Field ID="{e4bd36ec-17fe-4bac-a5d2-cc4d21ac7dcd}" Type="URL" Group="MARTA Columns" DisplayName="Documents" Name="InvestigationDocuments" Format="Hyperlink" ShowInNewForm="FALSE" ShowInEditForm="TRUE" ShowInDisplayForm="TRUE" />
+      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" DisplayName="Title" Name="Title" Required="FALSE" ShowInNewForm="FALSE" />
+      <Field ID="{8a121252-85a9-443d-8217-a1b57020fadf}" Type="DateTime" DisplayName="End Date" Name="_EndDate" Format="DateOnly" />
+      <Field ID="{64cd368d-2f95-4bfc-a1f9-8d4324ecb007}" Type="DateTime" Group="MARTA Columns" DisplayName="Start Date" Name="StartDate" Format="DateOnly" />
+      <Field ID="{78d11eb3-2377-4f81-b1c0-8f49ffcc8cf4}" Type="Text" Group="MARTA Columns" DisplayName="Investigation Number" Name="InvestigationNumber" />
+      <Field ID="{53dc354b-a1e7-4387-bf44-55aded533013}" Type="Choice" Group="MARTA Columns" DisplayName="Status" Name="InvestigationStatus">
+    <CHOICES>
+      <CHOICE>In Progress</CHOICE>
+      <CHOICE>Writing Report</CHOICE>
+      <CHOICE>Reassigned</CHOICE>
+      <CHOICE>On Hold</CHOICE>
+      <CHOICE>Suspended</CHOICE>
+      <CHOICE>Closed</CHOICE>
+    </CHOICES>
+  </Field>
+      <Field ID="{7a8def46-adf2-46b0-9b20-c7b938a20c7c}" Type="Choice" Group="MARTA Columns" DisplayName="Type" Name="Investigation Type">
+    <CHOICES>
+      <CHOICE>Fraud</CHOICE>
+      <CHOICE>Waste</CHOICE>
+      <CHOICE>Abuse</CHOICE>
+    </CHOICES>
+  </Field>
+      <Field ID="{76034f23-8b4f-4439-92a4-6932e227d871}" Type="Text" Group="MARTA Columns" DisplayName="Department" Name="InvestigationDept" />
+      <Field ID="{094b8264-ca75-47d2-9664-31d5af438312}" Type="User" Group="MARTA Columns" DisplayName="Auditor" Name="Auditor" />
+      <Field ID="{d625fd31-af7b-41e8-979e-006f2737445a}" Type="Number" Group="MARTA Columns" DisplayName="Hours Spent" Name="HoursSpent" />
+    </Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitleNoMenu">
+          </FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE">
+            </FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="InvestigationDocuments" />
+          <FieldRef Name="InvestigationNumber" />
+          <FieldRef Name="InvestigationStatus" />
+          <FieldRef Name="InvestigationType" />
+          <FieldRef Name="InvestigationDept" />
+          <FieldRef Name="Auditor" />
+          <FieldRef Name="StartDate" />
+          <FieldRef Name="_EndDate" />
+          <FieldRef Name="HoursSpent" />
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="ID">
+            </FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="Features\$SharePoint.Feature.DeploymentPath$\InvestigationLog\NewInvestigation.aspx" UseLegacyForm="TRUE"  WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>
