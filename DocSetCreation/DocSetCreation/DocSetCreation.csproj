@@ -4,11 +4,11 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{B62148DB-9617-455A-8A75-C328D75E89B6}</ProjectGuid>
+    <ProjectGuid>{5AE02129-4489-4B61-954B-A8C5CB9BB3E2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FraudHotlineLog</RootNamespace>
-    <AssemblyName>FraudHotlineLog</AssemblyName>
+    <RootNamespace>DocSetCreation</RootNamespace>
+    <AssemblyName>DocSetCreation</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -41,70 +41,57 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Office.DocumentManagement, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
-    <Reference Include="Microsoft.Office.Server, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Drawing" />
-    <Reference Include="System.Web" />
-    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="Microsoft.SharePoint" />
     <Reference Include="Microsoft.SharePoint.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CustomSaveButton.cs" />
-    <Compile Include="Lists\HotlineCallLog\EditCallLog.aspx.cs">
-      <DependentUpon>EditCallLog.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Lists\HotlineCallLog\EditCallLog.aspx.designer.cs">
-      <DependentUpon>EditCallLog.aspx.cs</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VisualWebPart1\VisualWebPart1.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VisualWebPart1\VisualWebPart1UserControl.ascx.cs">
+      <DependentUpon>VisualWebPart1UserControl.ascx</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VisualWebPart1\VisualWebPart1UserControl.ascx.designer.cs">
+      <DependentUpon>VisualWebPart1UserControl.ascx.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Features\FraudColumnsandContentTypes\FraudColumnsandContentTypes.feature">
-      <FeatureId>{2db54b47-a884-4170-afdb-380fcfd0ff78}</FeatureId>
-    </None>
-    <None Include="Features\FraudListsandLibraries\FraudListsandLibraries.feature">
-      <FeatureId>{48e8e2ec-1685-4169-bc60-48230bbf284b}</FeatureId>
-    </None>
     <None Include="key.snk" />
-    <None Include="Lists\HotlineCallLog\ListInstance1\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{0a1abe16-6044-4338-a0a6-0d9ccad20e35}</SharePointProjectItemId>
+    <None Include="VisualWebPart1\Elements.xml" />
+    <None Include="VisualWebPart1\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4101fd03-7ff2-46b8-97bf-c205ffb78daa}</SharePointProjectItemId>
     </None>
-    <None Include="Lists\HotlineCallLog\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{fdc2d211-9ecb-481f-ab90-263b545e7974}</SharePointProjectItemId>
-    </None>
+    <None Include="VisualWebPart1\VisualWebPart1.webpart" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Package\Package.package">
-      <PackageId>{0a277077-5b7b-43f9-8bcb-a1c5ccceba51}</PackageId>
+      <PackageId>{5fb00580-5624-48e2-b7fa-c7f87d468562}</PackageId>
     </None>
     <None Include="Package\Package.Template.xml">
       <DependentUpon>Package.package</DependentUpon>
     </None>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{174ea11f-4803-4e3b-aee6-d4b656f07cc7}</FeatureId>
+    </None>
+    <None Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </None>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <Content Include="Features\FraudColumnsandContentTypes\FraudColumnsandContentTypes.Template.xml">
-      <DependentUpon>FraudColumnsandContentTypes.feature</DependentUpon>
-    </Content>
-    <Content Include="Features\FraudListsandLibraries\FraudListsandLibraries.Template.xml">
-      <DependentUpon>FraudListsandLibraries.feature</DependentUpon>
-    </Content>
-    <Content Include="Lists\HotlineCallLog\EditCallLog.aspx">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="Lists\HotlineCallLog\Elements.xml">
-      <SubType>Designer</SubType>
-    </Content>
-    <Content Include="Lists\HotlineCallLog\ListInstance1\Elements.xml">
-      <SubType>Designer</SubType>
-    </Content>
-    <Content Include="Lists\HotlineCallLog\Schema.xml">
-      <SubType>Designer</SubType>
+    <Content Include="VisualWebPart1\VisualWebPart1UserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+      <Generator>SharePointWebPartCodeGenerator</Generator>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-  <!-- Parent ContentType: Item (0x01) -->
-  <ContentType ID="0x010020fd8ccb5992481ea3e6df354473383c"
-               Name="InvestigationInstance"
+  <!-- Parent ContentType: Document Set (0x0120D520) -->
+  <ContentType ID="0x0120D52000576e60aa3a8d44e8a55f830ee46b005c"
+               Name="InvestigationDocumentSet"
                Group="MARTA Content Types"
-               Description="Record of Fraud, Waste and Abuse investigations"
-               Inherits="TRUE"
+               Description="Record Fraud, Waste and Abuse Investigations"
+               Inherits="FALSE"
                Version="0">
     <FieldRefs>
       <FieldRef ID="{78D11EB3-2377-4F81-B1C0-8F49FFCC8CF4}" Name="InvestigationNumber"/>
@@ -13,10 +13,9 @@
       <FieldRef ID="{7A8DEF46-ADF2-46B0-9B20-C7B938A20C7C}" Name="InvestigationType"/>
       <FieldRef ID="{76034F23-8B4F-4439-92A4-6932E227D871}" Name="InvestigationDept"/>
       <FieldRef ID="{094B8264-CA75-47D2-9664-31D5AF438312}" Name="Auditor"/>
-      <FieldRef ID="{64cd368d-2f95-4bfc-a1f9-8d4324ecb007}" Name="StartDate"/>
-      <FieldRef ID="{8a121252-85a9-443d-8217-a1b57020fadf}" Name="_EndDate"/>
+      <!--<FieldRef ID="{0EAE06A0-9F73-480F-8F1C-E25243C7E03C}" Name="StartDate"/>-->
+      <FieldRef ID="{C97B87CD-367C-465E-9068-0EA7050C6A73}" Name="EndDate"/>
       <FieldRef ID="{D625FD31-AF7B-41E8-979E-006F2737445A}" Name="HoursSpent"/>
-      <FieldRef ID="{E4BD36EC-17FE-4BAC-A5D2-CC4D21AC7DCD}" Name="InvestigationDocuments" ShowInEditForm="FALSE"/>
     </FieldRefs>
   </ContentType>
 </Elements>

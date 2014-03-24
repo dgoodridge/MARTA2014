@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{61B121D6-4686-40C2-BE15-5F454E92BE57}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FraudHotlineContentTypes</RootNamespace>
+    <AssemblyName>FraudHotlineContentTypes</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Security" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content Types\FraudCallReport\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{146a1e40-676c-4072-a900-0deeb09fd009}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{9947e559-29f5-4ba3-972c-b7c9c2b12097}</FeatureId>
+    </None>
+    <None Include="Fields\AreaOfConcern\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{88206567-b0a2-4037-a326-07cf80c07c6b}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\AuditorComments\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a48fb1ea-29f9-4edf-a119-d8183a8b0ac6}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\Auditor\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9225ac7f-588d-4251-a213-76d1592abca6}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\CallerName\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e441369d-0e3a-42eb-b2ba-319a80fff60c}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\CallerPhone\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{668f659d-d521-40f7-8ff3-59b6a8273a4d}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\CallStatus\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a1715b94-0bd3-4eb1-8f6a-65ad91909e0d}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\CallTopic\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1d876dd1-9d45-4f4c-9765-ea3be2c580de}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\DateReceived\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6abb592c-4505-4f92-8eba-6cc7c427047f}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\EndDate\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1a382013-f0eb-47c0-ba11-e829e1a8fcc2}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\HLCallNumber\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8ef60a27-10fb-45cd-a33b-1faab632e93c}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\HoursSpent\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c19f16d0-c567-424c-bc8e-17064ae509c3}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\InvestigationDept\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{06f6038c-3490-4688-871d-bf843a0e57b5}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\InvestigationDocuments\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3e628e4e-7efa-4ee8-bb77-53c3b5158cdd}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\InvestigationNumber\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2ebf64fd-fab2-4f0e-8c8b-75fa5b5fb239}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\InvestigationStarted\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d5cd6a84-5df9-4d84-8005-14f72f3bd47c}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\InvestigationStatus\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{bf52e9f0-2bae-4cbf-8f97-842a842b30a3}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\InvestigationType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ea65079b-b359-4aab-b8db-ba14e7a300b0}</SharePointProjectItemId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Package\Package.package">
+      <PackageId>{cc27fd72-cdb9-4c61-9291-77ddbbb36c3b}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Content Types\FraudCallReport\Elements.xml" />
+    <Content Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </Content>
+    <Content Include="Fields\AreaOfConcern\Elements.xml" />
+    <Content Include="Fields\AuditorComments\Elements.xml" />
+    <Content Include="Fields\Auditor\Elements.xml" />
+    <Content Include="Fields\CallerName\Elements.xml" />
+    <Content Include="Fields\CallerPhone\Elements.xml" />
+    <Content Include="Fields\CallStatus\Elements.xml" />
+    <Content Include="Fields\CallTopic\Elements.xml" />
+    <Content Include="Fields\DateReceived\Elements.xml" />
+    <Content Include="Fields\EndDate\Elements.xml" />
+    <Content Include="Fields\HLCallNumber\Elements.xml" />
+    <Content Include="Fields\HoursSpent\Elements.xml" />
+    <Content Include="Fields\InvestigationDept\Elements.xml" />
+    <Content Include="Fields\InvestigationDocuments\Elements.xml" />
+    <Content Include="Fields\InvestigationNumber\Elements.xml" />
+    <Content Include="Fields\InvestigationStarted\Elements.xml" />
+    <Content Include="Fields\InvestigationStatus\Elements.xml" />
+    <Content Include="Fields\InvestigationType\Elements.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" />
+</Project>
